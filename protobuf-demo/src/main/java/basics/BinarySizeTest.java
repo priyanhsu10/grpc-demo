@@ -20,6 +20,6 @@ public class BinarySizeTest {
 
         byte[] byteArray = person.toByteArray();
 
-        System.out.println( "lenth of jsonbynary: "+ bytes.length +" length of probuf:"+byteArray.length);
+        System.out.println( "length of json binary: "+ bytes.length +" length of probuf binary:"+byteArray.length);
     }
 }

@@ -1,0 +1,8 @@
+syntax = "proto3";
+option  java_multiple_files = true;
+option  java_package = "com.proto.grpc.models";
+import "common/cars.proto";
+message Owner{
+  string  name = 1;
+  repeated common.Car cars = 2;
+}

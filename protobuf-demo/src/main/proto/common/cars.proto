@@ -1,0 +1,24 @@
+syntax="proto3";
+option  java_multiple_files=true;
+option  java_package="com.proto.grpc.models";
+package  common;
+ message  Car{
+  string name = 1;
+  string model = 2;
+  int32 year = 3;
+  BodyStyle style=4;
+ }
+
+
+//how to use map
+message  Dealer{
+ map<int32,Car> model=1;
+}
+
+
+enum  BodyStyle{
+ hachbag=0;
+ seadan=1;
+ suv=2;
+
+}
