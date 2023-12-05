@@ -1,0 +1,15 @@
+syntax = "proto3";
+option  java_multiple_files = true;
+option  java_package = "com.pro.grpc.models";
+message StockPrice{
+  string  stockName = 1;
+  double  stockPrice = 2;
+}
+message  StockRequest{
+  int32 count = 1;
+}
+
+service StockService{
+  rpc getData(StockRequest) returns (stream StockPrice);
+
+}
