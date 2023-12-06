@@ -1,0 +1,2 @@
+obj/Debug/net7.0/proto/Stock-serviceGrpc.cs \
+obj/Debug/net7.0/proto/StockService.cs: proto/stock-service.proto

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option  csharp_namespace = "dotnetclient";
+message StockPrice{
+  string  stockName = 1;
+  double  stockPrice = 2;
+}
+message  StockRequest{
+  int32 count = 1;
+}
+
+service StockService{
+  rpc getData(StockRequest) returns (stream StockPrice);
+
+}
