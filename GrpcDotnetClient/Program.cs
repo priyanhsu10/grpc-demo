@@ -9,8 +9,8 @@ var client = new StockService.StockServiceClient(channel);
 
 var stream = client.getData(new StockRequest() { Count = 10 });
 await foreach (StockPrice stok in stream.ResponseStream.ReadAllAsync<StockPrice>())
-
+{
 
     Console.WriteLine($"stock name: {stok.StockName} stock price : {stok.StockPrice_}");
-
+}
 
